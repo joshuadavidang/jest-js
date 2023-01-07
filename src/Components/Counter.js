@@ -1,11 +1,4 @@
-import {
-  Button,
-  Text,
-  Flex,
-  Box,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Button, Text, Flex, Box, Wrap, WrapItem } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Counter = ({ initialCount }) => {

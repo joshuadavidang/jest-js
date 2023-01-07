@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import Counter from "./Counter";
 
 describe("Counter", () => {
-  it("counter displays correct initial count", () => {
+  test("counter displays correct initial count", () => {
     render(<Counter initialCount={0} />);
     const countValue = Number(screen.getByTestId("count").textContent);
     expect(countValue).toEqual(0);
@@ -10,7 +10,7 @@ describe("Counter", () => {
 });
 
 describe("Increment Counter", () => {
-  it("count should increment by 1 if increment button is clicked", () => {
+  test("count should increment by 1 if increment button is clicked", () => {
     render(<Counter initialCount={5} />);
     const incrementButton = screen.getByRole("button", { name: "Increment" });
 
@@ -21,7 +21,7 @@ describe("Increment Counter", () => {
 });
 
 describe("Decrement Counter", () => {
-  it("count should decrement by 1 if decrement button is clicked", () => {
+  test("count should decrement by 1 if decrement button is clicked", () => {
     render(<Counter initialCount={5} />);
     const decrementButton = screen.getByRole("button", { name: "Decrement" });
 
@@ -32,7 +32,7 @@ describe("Decrement Counter", () => {
 });
 
 describe("Restart Counter", () => {
-  it("count should restart to 0 if restart button is clicked", () => {
+  test("count should restart to 0 if restart button is clicked", () => {
     render(<Counter initialCount={5} />);
     const restartButton = screen.getByRole("button", { name: "Restart" });
 
@@ -43,7 +43,7 @@ describe("Restart Counter", () => {
 });
 
 describe("Switch Signs", () => {
-  it("count should switch signs if switch sign button is clicked", () => {
+  test("count should switch signs if switch sign button is clicked", () => {
     render(<Counter initialCount={5} />);
     const switchSigns = screen.getByRole("button", { name: "Switch Signs" });
 
