@@ -1,5 +1,6 @@
 ## Tech Stack
 - [React.js](https://reactjs.org)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Jest](https://jestjs.io)
 
 ## Getting Started
